@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Recoz</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .home {
+            min-height: 100vh;
+            width: 100%;
+            background: url("https://mocah.org/uploads/posts/1143452-white-depth-of-field-books-blurred-paper-vintage-writing-ART-color-eye-shape-design-organ-close-up.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .logo {
+            position: relative;
+            top: 90%;
+            max-height: 100%;
+            max-width: 100%;
+            width: 180px;
+            height: 100px;
+            background: url("https://o.remove.bg/downloads/51ce61cc-5446-4bd6-a900-21c2fddd3f5a/Screenshot__362_-removebg-preview.png");
+            float: left;
+            background-size: cover;
+        }
+
+        .head {
+            display: inline-block;
+            color: black;
+        }
+
+        .head a {
+
+            color: black;
+            text-decoration: none;
+        }
+
+        .head li {
+            float: left;
+            list-style: none;
+            margin: 20px 15px;
+            color: black;
+            font-size: 20px;
+        }
+
+        .head li a:hover {
+            text-decoration-line: underline;
+            color: black;
+            transition: 1s;
+        }
+
+        #left {
+            display: inline-block;
+            float: left;
+            color: rgb(10, 10, 10);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+
+
+        #mid {
+            position: relative;
+            left: 380px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #right {
+            position: absolute;
+            right: 100px;
+            border-width: 1px;
+            border-radius: 2mm;
+            line-height: 0.1;
+            border: 2px solid black;
+            position: relative;
+            left: 770px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+
+
+        img {
+            display: inline-block;
+            max-width: 75px;
+            float: left;
+
+            position: relative;
+            bottom: 12px
+        }
+
+        .text {
+            color: rgb(5, 5, 5);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text h1 {
+            font-size: 70px;
+            font-weight: 6000px;
+            font-family: 'Pushster', cursive;
+        }
+
+        .text p {
+            margin: 3px 0 3px;
+            font-size: 20px;
+            font-family: 'Pushster', cursive;
+        }
+
+        .hero-btn {
+            background-color: #f4511e;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+
+            font-family: 'Pushster', cursive;
+        }
+
+        .hero-btn:hover {
+            border: 1px solid rgb(211, 111, 18);
+            background: rgb(211, 111, 18);
+            transition: 1s;
+
+        }
+
+        .course {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .course h1 {
+            font-size: 46px;
+            font-weight: 600;
+        }
+
+        .course p {
+            color: rgb(44, 39, 39);
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+
+        .row {
+            margin: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex-basis: 45%;
+            background: rgb(247, 235, 235);
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            transition: 0.5s;
+        }
+
+        .column:hover {
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .review {
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        .review h1 {
+            font-size: 46px;
+            font-weight: 600;
+        }
+
+
+
+        .test-row {
+            margin: 2% 20%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .test-col {
+            flex-basis: 44%;
+            background: rgb(247, 235, 235);
+            border-radius: 5px;
+            box-sizing: border-box;
+            border-spacing: 50px;
+            margin-bottom: 2%;
+            padding: 20px 40px;
+            transition: 0.5s;
+        }
+
+        .test-col:hover {
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .test-col img {
+            height: 40px;
+            margin-left: 5px;
+            margin-right: 30px;
+            border-radius: 50%;
+        }
+
+        .test-col p {
+            padding: 0;
+            float: inline-end;
+        }
+
+        .test-col h3 {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .cta {
+            margin: 110px;
+            width: 80%;
+            background: url(https://media.swncdn.com/via/22618-istockgetty-images-plusdrazen-zigic-3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            border-radius: 10px;
+            text-align: center;
+            padding: 120px 0;
+        }
+
+        .cta h1 {
+            color: white;
+            font-size: 30px;
+            margin-bottom: 30px;
+            padding: 1px;
+        }
+
+        .hero-btn1 {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 34px;
+            font-size: 15px;
+            background: rgb(211, 111, 18);
+        }
+
+        .hero-btn1:hover {
+            border: 1px solid rgb(214, 208, 202);
+            background: gray;
+            transition: 1s;
+
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer h4 {
+            margin-bottom: 25px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="home">
+
+        <div class="logo"></div>
+
+
+        <div class="text">
+            <h1>SMART BIOMETRIC ATTENDANCE SYSTEM</h1>
+            <p>
+                Welcome to Recoz, Biometric attendance system. You need to stand in front of camera for marking your attendance.<br>
+
+                                    Your attendance would be marked with your display of name.
+            </p>
+            <a href="/home" class="hero-btn">CLICK HERE</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
